@@ -20,4 +20,4 @@ async def badboy():
 def five_hundred():
     return 'oh no', 500
 
-app.run()
+app.run(host="0.0.0.0")
