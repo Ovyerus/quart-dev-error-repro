@@ -11,13 +11,4 @@ async def root():
 async def banana():
     return 'e'
 
-
-@app.route('/woops')
-async def badboy():
-    raise Exception('uh oh')
-
-@app.errorhandler(500)
-def five_hundred():
-    return 'oh no', 500
-
 app.run(host="0.0.0.0")
